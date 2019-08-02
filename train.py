@@ -25,7 +25,7 @@ def main():
 	for line in infiletest:
 		test_data.append(line.split(', '))
         #q = Question(9, "Female")
-	test_data.pop()
+	test_data.pop(0)
 	for row in test_data:
 		print("Actual: %s. Predicted: %s" % (row[-1], print_lead(classify(row, my_tree))))
 
